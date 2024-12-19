@@ -1,0 +1,13 @@
+com\microservices\example\rest\addition\HomeController.class
+com\microservices\example\rest\subtraction\SubtractionController.class
+com\microservices\example\web\WebArithmeticController.class
+com\microservices\example\Main.class
+com\microservices\example\rest\addition\AdditionServer.class
+com\microservices\example\rest\addition\AdditionController.class
+com\microservices\example\web\WebServer.class
+com\microservices\example\registration\EurekaServer.class
+com\microservices\example\web\WebSubtractionService.class
+com\microservices\example\rest\subtraction\HomeController.class
+com\microservices\example\rest\subtraction\SubtractionServer.class
+com\microservices\example\web\WebAdditionService.class
+com\microservices\example\web\HomeController.class

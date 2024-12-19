@@ -1,0 +1,34 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="header :: copy"></head>
+
+<body>
+
+	<h1>Spring Boot Microservices Example</h1>
+	<h3>Addition Service</h3>
+	<form action="/add">
+	  	First number:<br>
+	  	<input type="number" name="addend1" value="0">
+	  	<br>
+	  	Second number<br>
+	  	<input type="number" name="addend2" value="0">
+	  	<br><br>
+	  	<input type="submit" value="Submit">
+	</form>	
+	<hr>
+	<form action="/subtract">
+	  	First number:<br>
+	  	<input type="number" name="minuend" value="0">
+	  	<br>
+	  	Second number<br>
+	  	<input type="number" name="subtrahend" value="0">
+	  	<br><br>
+	  	<input type="submit" value="Submit">
+	</form>	
+
+	<div th:replace="footer :: copy"></div>
+
+</body>
+</html>
