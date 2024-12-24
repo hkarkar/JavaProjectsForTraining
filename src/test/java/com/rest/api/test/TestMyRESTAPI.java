@@ -58,8 +58,8 @@ public class TestMyRESTAPI {
 		return sb.toString();
 	}
 	public static void main(String[] args) {
-		TestMyRESTAPI tmr = new TestMyRESTAPI("http://ngl001155.persistent.co.in:2222/add?addend1=1111&addend2=1123");
-		//TestMyRESTAPI tmr = new TestMyRESTAPI("http://ngl001155.persistent.co.in:3333/subtract?subtract?minuend=12&subtrahend=14");
+		TestMyRESTAPI tmr = new TestMyRESTAPI("http://localhost:2222/add?addend1=1111&addend2=1123");
+		//TestMyRESTAPI tmr = new TestMyRESTAPI("http://localhost:3333/subtract?subtract?minuend=12&subtrahend=14");
 		//TestMyRESTAPI tmr = new TestMyRESTAPI("http://localhost:2222/add?addend1=10&addend2=11");
 		//TestMyRESTAPI tmr = new TestMyRESTAPI("http://localhost:4444/add?addend1=11&addend2=12");
 		//TestMyRESTAPI tmr = new TestMyRESTAPI("https://www.msn.com/en-in");
