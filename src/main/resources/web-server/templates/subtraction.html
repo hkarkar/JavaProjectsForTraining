@@ -1,0 +1,21 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"> 
+<head th:replace="header :: copy"></head> 
+<body> 
+    <h1>Subtraction Operation</h1> 
+    <form action="/subtract" method="get"> 
+        <label for="minuend">First number:</label> 
+        <input type="number" id="minuend" name="minuend" value="0" required> 
+        <br> 
+        <label for="subtrahend">Second number:</label> 
+        <input type="number" id="subtrahend" name="subtrahend" value="0" required> 
+        <br><br> 
+        <input type="submit" value="Subtract"> 
+    </form> 
+    <div th:if="${json}"> 
+        <h2>Result:</h2> 
+        <p>JSON result received from Subtraction Service: <b th:text="${json}">json</b></p> 
+    </div> 
+    <div th:replace="footer :: copy"></div> 
+</body> 
+</html> 
