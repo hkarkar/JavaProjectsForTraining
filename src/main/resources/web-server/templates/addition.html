@@ -1,0 +1,21 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"> 
+<head th:replace="header :: copy"></head> 
+<body> 
+    <h1>Addition Operation</h1> 
+    <form action="/add" method="get"> 
+        <label for="addend1">First number:</label> 
+        <input type="number" id="addend1" name="addend1" value="0" required> 
+        <br> 
+        <label for="addend2">Second number:</label> 
+        <input type="number" id="addend2" name="addend2" value="0" required> 
+        <br><br> 
+        <input type="submit" value="Add"> 
+    </form> 
+    <div th:if="${json}"> 
+        <h2>Result:</h2> 
+        <p>JSON result received from Addition Service: <b th:text="${json}">json</b></p> 
+    </div> 
+    <div th:replace="footer :: copy"></div> 
+</body> 
+</html> 
